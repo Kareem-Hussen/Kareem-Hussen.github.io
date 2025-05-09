@@ -1,404 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kareem Hussen</title>
-    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/media.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
-      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Steller landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Heisenberg Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Steller main styles -->
+	<link rel="stylesheet" href="assets/css/steller.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/media.css">
+	<link rel="stylesheet" href="assets/css/reset.css">
 
     <style>
-      .projects-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns */
-        gap: 1.5rem; /* Space between items */
-        width: 100%;
-      }
-      
-      .project-box {
-        position: relative;
-        overflow: hidden;
-        border-radius: 8px; /* Optional: for rounded corners */
-        aspect-ratio: 16/9; /* Maintain video aspect ratio (16:9) */
-      }
-      
-      .project-box iframe {
-        width: 100%;
-        height: 100%;
-        border: none;
-        object-fit: cover; /* Ensure video covers the container */
-      }
-      
-      /* Responsive adjustments */
-      @media (max-width: 992px) {
         .projects-grid {
-          grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+          display: grid;
+          grid-template-columns: repeat(3, 1fr); /* 3 columns */
+          gap: 1.5rem; /* Space between items */
+          width: 100%;
         }
-      }
-      
-      @media (max-width: 576px) {
-        .projects-grid {
-          grid-template-columns: 1fr; /* 1 column on mobile */
-        }
-      }
-      </style>
-
-      <style>
+        
         .project-box {
           position: relative;
           overflow: hidden;
+          border-radius: 8px; /* Optional: for rounded corners */
+          aspect-ratio: 16/9; /* Maintain video aspect ratio (16:9) */
         }
         
-        .project-link, .project-video {
+        .project-box iframe {
           width: 100%;
           height: 100%;
-          display: block;
+          border: none;
+          object-fit: cover; /* Ensure video covers the container */
         }
         
-        .project-video {
-          position: absolute;
-          top: 0;
-          left: 0;
-          border: none;
+        /* Responsive adjustments */
+        @media (max-width: 992px) {
+          .projects-grid {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+          }
+        }
+        
+        @media (max-width: 576px) {
+          .projects-grid {
+            grid-template-columns: 1fr; /* 1 column on mobile */
+          }
         }
         </style>
-
-  </head>
-
-  <body>
-    <header id="header" class="header">
-      <div class="container container-lg">
-        <div class="header-nav">
-          <a
-            href="#home"
-            class="logo"
-            data-aos="fade-down"
-            data-aos-duration="1000"
-            >Kareem Hussen</a
-          >
-          <nav id="nav" class="nav">
-            <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
-              <li class="nav-item">
-                <a href="#home" class="nav-link active">Home</a>
-              </li>
-              <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-              </li>
-              <li class="nav-item">
-                <a href="#projects" class="nav-link">Works</a>
-              </li>
-              <li class="nav-item">
-                <a href="#contact" class="nav-link">Contact</a>
-              </li>
-            </ul>
-            <button id="nav-btn" class="nav-btn">
-              <img
-                id="nav-btn-img"
-                src="img/icons/open.svg"
-                alt="Navigation button"
-              />
-            </button>
-          </nav>
-        </div>
-      </div>
-    </header>
-
-    <section id="home" class="hero">
-      <div class="container container-lg">
-        <div
-          class="hero-row"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-out"
-          data-aos-delay="500"
-          data-aos-duration="1000"
-        >
-          <div class="hero-content">
-            <span class="hero-greeting"> Hello, I am</span>
-            <h1 class="hero-heading">Kareem Hussen</h1>
-            <span class="hero-heading-subtitle"
-              >Roblox Scripter & Backend Developer</span
-            >
-            <div class="about-social-list">
-              <div class="social-links-row">
-                <a href="https://github.com/KareemHussen">
-                  <img
-                    src="img/social_icons/github.svg"
-                    alt="https://github.com/KareemHussen"
-                  />
-                </a>
-
-                <a href="https://www.linkedin.com/in/kareem-hussen">
-                  <img
-                    src="img/social_icons/linkedin.svg"
-                    alt="https://www.linkedin.com/in/kareem-hussen"
-                  />
-                </a>
-
-                <a href="http://facebook.com/kareemgewaly">
-                  <img
-                    src="img/social_icons/facebook.svg"
-                    alt="http://facebook.com/kareemgewaly"
-                /></a>
-                <a href="https://www.instagram.com/kareemhussen500/">
-                  <img
-                    src="img/social_icons/instagram.svg"
-                    alt="https://www.instagram.com/kareemhussen500/"
-                /></a>
-                <a href="https://discord.com/users/385370239338151938">
-                  <img
-                    src="img/social_icons/discord.svg"
-                    alt="https://discord.com/users/385370239338151938"
-                /></a>
-              </div>
-            </div>
-
-            <div>
-              <a href="#projects" class="btn">My Portfolio</a>
-              <a href="#contact" class="btn btn-white">Contact Me</a>
-            </div>
-          </div>
-          <div class="hero-img">
-            <img
-              src="img/hero/hero.png"
-              alt="Picture of Christian Buehner taken from Unsplash</a>
-              "
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-title">
-          <h2 class="title">About Me</h2>
-        </div>
-        <div class="about-row">
-          <div
-            class="about-content"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-          >
-            <p class="about-descr">
-              I’m Kareem Hussen, a 22-year-old Roblox scripter with 1 year of experience in Lua scripting, creating engaging game mechanics and optimizing gameplay experiences. Alongside my passion for game development, I’m also a backend developer with 3 years of experience using Laravel, building robust and scalable web applications. I love combining creativity and technical skills to bring ideas to life, whether in games or web development!
-            </p>
-            
-          </div>
-          <div
-            class="about-skills"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            <div class="skill">
-              <div class="skill-title">Roblox Scripting</div>
-              <div class="skill-percent">95%</div>
-              <div class="skill-bar__progress">
-                <div class="skill-bar__fill" data-progress="95"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-title">Laravel / PHP Development</div>
-              <div class="skill-percent">92%</div>
-              <div class="skill-bar__progress">
-                <div class="skill-bar__fill" data-progress="92"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-title">HTMl/CSS</div>
-              <div class="skill-percent">75%</div>
-              <div class="skill-bar__progress">
-                <div class="skill-bar__fill" data-progress="75"></div>
-              </div>
-            </div>
-            <div class="skill">
-              <div class="skill-title">DevOps</div>
-              <div class="skill-percent">80%</div>
-              <div class="skill-bar__progress">
-                <div class="skill-bar__fill" data-progress="80"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="services-row">
-          <div
-            class="service-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="50"
-          >
-            <img class="service-card-img" src="img/services/01.svg" alt="" />
-            <h3 class="service-card-title">Roblox Scripting</h3>
-            <p>
-              Crafting interactive and optimized game mechanics using Lua scripting to deliver engaging and seamless player experiences.
-            </p>
-          </div>
-
-          <div
-            class="service-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            <img class="service-card-img" src="img/services/02.svg" alt="" />
-            <h3 class="service-card-title">Backend Developer</h3>
-            <p>
-              Building scalable and efficient web applications using Laravel, focusing on robust backend solutions and seamless integrations to deliver high-performance systems.
-            </p>
-          </div>
-
-          <div
-            class="service-card"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <img class="service-card-img" src="img/services/03.svg" alt="" />
-            <h3 class="service-card-title">Education & Skills</h3>
-            <p>
-              Graduated in Computer Science from Ain Shams University, with a strong foundation in programming and a passion for game development and web technologies.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <section id="projects" class="projects">
-      <div class="container container-lg">
-        <div class="projects-title">
-          <h2 class="title">Works</h2>
-        </div>
-
-        <div class="projects-grid">
-
-          <div class="project-box" 
-              data-aos="fade-zoom-in"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="1000"
-              >
-            
-            <!-- Image and Mask (visible by default) -->
-            <a href="#!" class="project-link">
-              <img class="project-img" src="img/works/flying1.png" alt="" style="position: relative; top: -5rem;">
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Flying</h5>
-                  <p class="white">Effortless aerial movement with intuitive controls.</p>
-                </div>
-              </div>
-            </a>
-
-            <!-- Iframe (hidden by default) -->
-            <iframe class="project-video" 
-                    src="https://www.youtube.com/embed/SIPOb6N2Txo"
-                    style="display: none;"></iframe>
-          </div>
-
-
-          <div class="project-box" 
-              data-aos="fade-zoom-in"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="1000"
-              >
-            
-            <!-- Image and Mask (visible by default) -->
-            <a href="#!" class="project-link">
-              <img class="project-img" src="img/works/fps.png" alt="" style="position: relative; top: -1rem;">
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Shooting System & FPS</h5>
-                  <p class="white">Immersive FPS combat with responsive shooting and weapon variety</p>
-                </div>
-              </div>
-            </a>
-
-            <!-- Iframe (hidden by default) -->
-            <iframe class="project-video" 
-                    src="https://www.youtube.com/embed/qwly9Vlalpo"
-                    style="display: none;"></iframe>
-          </div>
-
-
-      <div class="project-box" 
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-out"
-          data-aos-duration="1000"
-          >
-        
-        <!-- Image and Mask (visible by default) -->
-        <a href="#!" class="project-link">
-          <img class="project-img" src="img/works/round.png" alt="" style="position: relative; top: -6rem;">
-          <div class="project-mask">
-            <div class="project-caption">
-              <h5 class="white">Round System</h5>
-              <p class="white">Seamless competitive matches with automated transitions and victory recognition.</p>
-            </div>
-          </div>
-        </a>
-
-        <!-- Iframe (hidden by default) -->
-        <iframe class="project-video" 
-                src="https://www.youtube.com/embed/1_1jezmzW2c"
-                style="display: none;"></iframe>
-      </div>
-
-
-      <div class="project-box" 
-              data-aos="fade-zoom-in"
-              data-aos-easing="ease-in-out"
-              data-aos-duration="1000"
-              >
-            
-            <!-- Image and Mask (visible by default) -->
-            <a href="#!" class="project-link">
-              <img class="project-img" src="img/works/customization.jpg" alt="" style="position: relative; top: -7rem;">
-              <div class="project-mask">
-                <div class="project-caption">
-                  <h5 class="white">Roblox Advanced Character Customization System</h5>
-                  <p class="white">Customize Roblox avatars: body, face, style, real-time multiplayer sync</p>
-                </div>
-              </div>
-            </a>
-
-            <!-- Iframe (hidden by default) -->
-            <iframe class="project-video" 
-                    src="https://www.youtube.com/embed/E_NmHbEoRH4"
-                    style="display: none;"></iframe>
-        </div>
+  
+        <style>
+          .project-box {
+            position: relative;
+            overflow: hidden;
+          }
           
-      </div>
-      </div>
+          .project-link, .project-video {
+            width: 100%;
+            height: 100%;
+            display: block;
+          }
+          
+          .project-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: none;
+          }
+        </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="assets/imgs/logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>               
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testmonial">Testmonial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>          
+    </nav>
+    <!-- End of page navibation -->
+
+    <!-- Page Header -->
+    <header class="header" id="home">
+        <div class="container">
+            <div class="infos">
+                <h6 class="subtitle">hello,I'm</h6>
+                <h6 class="title">NinoFino19</h6>
+                <p>Professional Roblox Scripter</p>
+                <div class="buttons pt-3">
+                    <a class="btn btn-primary rounded" style="text-align: center; align-content: center;" href="#contact">Hire Me</a>
+                    <a class="btn btn-dark rounded" href="#portfolio">Look At Works</a>
+                </div>      
+
+                
+            </div>              
+            <div class="img-holder">
+                <img src="assets/imgs/man.png" alt="">
+            </div>      
+        </div>  
+
+        <!-- Header-widget -->
+        <div class="widget">
+            <div class="widget-item">
+                <h2>61</h2>
+                <p>Happy Clients</p>
+            </div>
+            <div class="widget-item">
+                <h2>102</h2>
+                <p>Project Completed</p>
+            </div>
+            <div class="widget-item">
+                <h2>+50</h2>
+                <p>Awards Won</p>
+            </div>
+        </div>
+    </header>
+    <!-- End of Page Header -->
+    
+    <!-- About section -->
+    <section id="about" class="section mt-3">
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3">
+                    <img src="assets/imgs/avatar.jpg" alt=""  style="height: 50%;" class="img-thumbnail mb-4">
+                </div>
+                <div class="pl-md-4 col-md-9">
+                    <h6 class="title">NinoFino19</h6>
+                    <p class="subtitle">Professional Roblox Scripter</p>
+                    <p>With years of experience in Roblox development, NinoFino19 specializes in creating efficient, high-performance scripts tailored to enhance gameplay, automation, and user interaction. From custom game mechanics to advanced administrative systems, every project is built with scalability and precision in mind. Passionate about clean, maintainable code, NinoFino19 delivers solutions that not only work flawlessly but are also easy for teams to build upon.</p>
+                    <p>Whether it's crafting dynamic NPC behaviors, integrating data stores, or optimizing server-side performance, NinoFino19 ensures that every script contributes to a smooth and immersive gaming experience. Trusted by clients across the Roblox community, this scripter is dedicated to pushing the boundaries of what's possible on the platform while maintaining the highest standards of professionalism and collaboration.</p>
+
+                    <a class="btn btn-primary rounded mt-3" href="#contact">Hire Me</a>                   
+                </div>
+            </div>
+        </div>
     </section>
 
 
+    <!-- Skills section -->
+    <section class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Skills</h6>
+            <h6 class="section-title mb-4">Why Choose Me</h6>
+            <p class="mb-5 pb-4">With years of experience in Roblox game development, I specialize in writing clean, efficient Lua code that powers everything from advanced gameplay systems to smooth UI and animations. <br> I’m committed to delivering high-quality scripts, meeting deadlines, and helping your game stand out on the platform.</p>
 
 
-
-    <section id="contact" class="contact">
-      <div class="container">
-        <div class="contact-title">
-          <h2 class="title">Contact</h2>
+            <div class="row text-left">
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Roblox Scripting</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Web Development (Laravel)</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 92%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>92%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">HTMl/CSS</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>75%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">DevOps</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>80%</span></div>
+                    </div>
+                </div>
+            </div>  
         </div>
-        <div class="contact-content">
-          <p>
-            Tell me about your project.
-            <br />
-            Let's talk and work together!
-          </p>
+    </section>
+    <!-- End of Skills sections -->
+
+    <!-- Portfolio section -->
+    <section id="portfolio" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Portfolio</h6>
+            <h6 class="section-title mb-4">Check My Wonderful Works</h6>
+            <p class="mb-5 pb-4">Explore a showcase of my best Roblox scripting projects, featuring unique mechanics, polished gameplay systems, and optimized code.</p>
+
+            <div class="projects-grid">
+
+
+                <div class="project-box" 
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-out"
+                    data-aos-duration="1000"
+                    >
+                  
+                  <!-- Image and Mask (visible by default) -->
+                  <a href="#!" class="project-link">
+                    <img class="project-img" src="img/works/flying1.png" alt="" style="position: relative; top: -4rem;" >
+                    <div class="project-mask">
+                      <div class="project-caption">
+                        <h5 class="white">Flying</h5>
+                        <p class="white">Effortless aerial movement with intuitive controls.</p>
+                      </div>
+                    </div>
+                  </a>
+      
+                  <!-- Iframe (hidden by default) -->
+                  <iframe class="project-video" 
+                          src="https://www.youtube.com/embed/SIPOb6N2Txo"
+                          style="display: none;"></iframe>
+                </div>
+                
+      
+      
+                <div class="project-box" 
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-out"
+                    data-aos-duration="1000"
+                    >
+                  
+                  <!-- Image and Mask (visible by default) -->
+                  <a href="#!" class="project-link">
+                    <img class="project-img" src="img/works/command.png" alt="" style="position: relative; top: -5rem;">
+                    <div class="project-mask">
+                      <div class="project-caption">
+                        <h5 class="white">Command System</h5>
+                        <p class="white">Client-Configurable Syntax & Modular Architecture Professional command system solution for developers</p>
+                      </div>
+                    </div>
+                  </a>
+      
+                  <!-- Iframe (hidden by default) -->
+                  <iframe class="project-video" 
+                          src="https://www.youtube.com/embed/wbKQOihJxX8"
+                          style="display: none;"></iframe>
+                </div>
+      
+      
+            <div class="project-box" 
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-out"
+                data-aos-duration="1000"
+                >
+              
+              <!-- Image and Mask (visible by default) -->
+              <a href="#!" class="project-link">
+                <img class="project-img" src="img/works/round.png" alt="" style="position: relative; top: -6rem;">
+                <div class="project-mask">
+                  <div class="project-caption">
+                    <h5 class="white">Round System</h5>
+                    <p class="white">Seamless competitive matches with automated transitions and victory recognition.</p>
+                  </div>
+                </div>
+              </a>
+      
+              <!-- Iframe (hidden by default) -->
+              <iframe class="project-video" 
+                      src="https://www.youtube.com/embed/1_1jezmzW2c"
+                      style="display: none;"></iframe>
+            </div>
+      
+      
+            <div class="project-box" 
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-out"
+                    data-aos-duration="1000"
+                    >
+                  
+                  <!-- Image and Mask (visible by default) -->
+                  <a href="#!" class="project-link">
+                    <img class="project-img" src="img/works/customization.jpg" alt="" style="position: relative; top: -5rem;">
+                    <div class="project-mask">
+                      <div class="project-caption">
+                        <h5 class="white">Roblox Advanced Character Customization System</h5>
+                        <p class="white">Customize Roblox avatars: body, face, style, real-time multiplayer sync</p>
+                      </div>
+                    </div>
+                  </a>
+      
+                  <!-- Iframe (hidden by default) -->
+                  <iframe class="project-video" 
+                          src="https://www.youtube.com/embed/E_NmHbEoRH4"
+                          style="display: none;"></iframe>
+              </div>
+                
+
+
+              <div class="project-box" 
+                    data-aos="fade-zoom-in"
+                    data-aos-easing="ease-in-out"
+                    data-aos-duration="1000"
+                    >
+                  
+                  <!-- Image and Mask (visible by default) -->
+                  <a href="#!" class="project-link">
+                    <img class="project-img" src="img/works/terrian.png" alt="" style="position: relative; top: -5rem;">
+                    <div class="project-mask">
+                      <div class="project-caption">
+                        <h5 class="white">Advanced Terrian System</h5>
+                        <p class="white">Roblox Advanced Terrain System | Dynamic Voxel Editing & Real-Time Multiplayer Sync</p>
+                      </div>
+                    </div>
+                  </a>
+      
+                  <!-- Iframe (hidden by default) -->
+                  <iframe class="project-video" 
+                          src="https://www.youtube.com/embed/zkBM1S-vhJ8"
+                          style="display: none;"></iframe>
+                </div>
+            </div>
+            
         </div>
+    </section>
+    <!-- End of portfolio section -->
 
-       
-        <div class="response"></div>
+    <!-- Testmonial Section -->
+    <section id="testmonial" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Testmonial</h6>
+            <h6 class="section-title mb-4">What People Say About Me</h6>
+            <p class="mb-5 pb-4">I've had the pleasure of working with amazing clients and colleagues who appreciate my dedication and attention to detail. <br> Their feedback highlights my commitment to delivering high-quality work and building strong, collaborative relationships.</p>            
 
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="card testmonial-card border">
+                          <div class="card-body">
+                              <img src="assets/imgs/avatar-3.jpg" alt="">
+                              <p>Working with them was incredible! They turned our rough game idea into a fully playable Roblox experience, complete with smooth scripting and great attention to detail.</p>
+                              <h1 class="title">Ahmed Khaled</h1>
+                              <h1 class="subtitle">Game Designer</h1>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card testmonial-card border">
+                          <div class="card-body">
+                              <img src="assets/imgs/avatar-2.jpg" alt="">
+                              <p>Reliable, fast, and super talented! They scripted our game systems perfectly, from custom tools to animations and UI interactions. Highly recommended!</p>
+                              <h1 class="title">James Bert</h1>
+                              <h1 class="subtitle">Studio Manager</h1>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="card testmonial-card border">
+                          <div class="card-body">
+                              <img src="assets/imgs/avatar-3.jpg" alt="">
+                              <p>One of the best Roblox scripters we've worked with. Their code is clean and optimized, and they even helped us debug legacy scripts with ease.</p>
+                              <h1 class="title">Michael Abra</h1>
+                              <h1 class="subtitle">Lead Developer</h1>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of testmonial section -->
+
+    <!-- Hire me section -->
+    <section class="bg-gray p-0 section">
+        <div class="container">
+            <div class="card bg-primary">
+                <div class="card-body text-light">
+                    <div class="row align-items-center">
+                        <div class="col-sm-9 text-center text-sm-left">
+                            <h5 class="mt-3">Hire Me For Your Project</h5>
+                            <p class="mb-3">Accusantium labore nostrum similique quisquam.</p>
+                        </div>
+                        <div class="col-sm-3 text-center text-sm-right">
+                            <a class="btn btn-light rounded" href="#contact">Hire Me!</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>      
+    <!-- End od Hire me section. -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="position-relative section">
+        <div class="container text-center">
+            <h6 class="subtitle">Contact</h6>
+            <h6 class="section-title mb-4">Get In Touch With Me</h6>
+            <p class="mb-5 pb-4">Have a project idea or need help with Roblox scripting? <br> Whether it's custom systems, game mechanics, or debugging, I'm here to help. Let's bring your
+
+
+            <div class="response"></div>
+
+            <div class="container">
+              <div class="footer-row">
+                <div class="social-links-row footer-social">
+                    <a href="https://github.com/KareemHussen">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                viewBox="0 0 25 25" style="enable-background:new 0 0 25 25; width: 100px; height: 100px;" xml:space="preserve">
+                            <path d="M12.3,0.5C5.6,0.5,0.5,5.7,0.5,12.6c0,5.5,3.4,10.2,8.2,11.9c0.6,0.1,0.8-0.3,0.8-0.6c0-0.3,0-2,0-3
+                            c0,0-3.4,0.7-4.1-1.5c0,0-0.6-1.4-1.3-1.8c0,0-1.1-0.8,0.1-0.8c0,0,1.2,0.1,1.9,1.3c1.1,1.9,2.8,1.4,3.5,1
+                            c0.1-0.8,0.4-1.3,0.8-1.7c-2.7-0.3-5.4-0.7-5.4-5.5c0-1.4,0.4-2,1.1-2.9C5.9,8.7,5.5,7.4,6.2,5.6C7.2,5.3,9.5,7,9.5,7
+                            c1-0.3,2-0.4,3-0.4s2.1,0.1,3,0.4c0,0,2.3-1.7,3.3-1.3c0.7,1.7,0.3,3,0.1,3.4c0.8,0.9,1.2,1.6,1.2,2.9c0,4.8-2.9,5.2-5.6,5.5
+                            c0.4,0.4,0.8,1.1,0.8,2.3c0,1.7,0,3.7,0,4.1c0,0.3,0.2,0.7,0.8,0.6c4.8-1.6,8.1-6.4,8.1-11.9C24.5,5.7,19.1,0.5,12.3,0.5z"/>
+                        </svg>
+                    </a>
+                      
+      
+                  <a href="https://www.linkedin.com/in/kareem-hussen">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 25 25" style="enable-background:new 0 0 25 25; width: 100px; height: 100px;" xml:space="preserve">
+                    <path d="M22.6,0.5h-20c-1.1,0-2.1,0.8-2.1,1.9v20.1c0,1.1,1,2.1,2.1,2.1h20c1.1,0,1.9-1,1.9-2.1V2.4C24.5,1.3,23.7,0.5,22.6,0.5z
+                        M7.9,20.5H4.5V9.8h3.4V20.5z M6.3,8.2L6.3,8.2c-1.1,0-1.8-0.8-1.8-1.8c0-1,0.7-1.8,1.9-1.8s1.8,0.8,1.8,1.8
+                        C8.2,7.4,7.5,8.2,6.3,8.2L6.3,8.2z M20.5,20.5h-3.4v-5.8c0-1.4-0.5-2.4-1.7-2.4c-1,0-1.5,0.6-1.8,1.3c-0.1,0.2-0.1,0.5-0.1,0.8v6.1
+                        H10V9.8h3.4v1.5c0.5-0.7,1.3-1.7,3.1-1.7c2.3,0,4,1.5,4,4.7L20.5,20.5z"/>
+                    </svg>
+                  </a>
+      
+                  <a href="http://facebook.com/kareemgewaly">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 25 25" style="enable-background:new 0 0 25 25; width: 100px; height: 100px;" xml:space="preserve">
+                    <style type="text/css">
+                        .st0{fill-rule:evenodd;clip-rule:evenodd;}
+                    </style>
+                    <path class="st0" d="M24.5,12.6c0-6.7-5.4-12.1-12-12.1s-12,5.4-12,12.1c0,6,4.4,11,10.1,11.9v-8.4h-3v-3.5h3V9.9
+                        c0-3,1.8-4.7,4.5-4.7c1.3,0,2.7,0.2,2.7,0.2v3h-1.5c-1.5,0-2,0.9-2,1.9v2.3h3.3l-0.5,3.5h-2.8v8.4C20.1,23.6,24.5,18.6,24.5,12.6
+                        L24.5,12.6z"/>
+                    </svg>
+                </a>
+      
+                  <a href="https://www.instagram.com/kareemhussen500/">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" style="enable-background:new 0 0 25 25; width: 100px; height: 100px;" class="ionicon" viewBox="0 0 512 512"><path d="M349.33 69.33a93.62 93.62 0 0193.34 93.34v186.66a93.62 93.62 0 01-93.34 93.34H162.67a93.62 93.62 0 01-93.34-93.34V162.67a93.62 93.62 0 0193.34-93.34h186.66m0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32z"/><path d="M377.33 162.67a28 28 0 1128-28 27.94 27.94 0 01-28 28zM256 181.33A74.67 74.67 0 11181.33 256 74.75 74.75 0 01256 181.33m0-37.33a112 112 0 10112 112 112 112 0 00-112-112z"/></svg>
+                </a>
+      
+                  <a href="https://discord.com/users/385370239338151938">
+                    
+                    <svg width="800px" height="800px" style="enable-background:new 0 0 25 25; width: 100px; height: 100px;" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000">
+
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                        
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <g id="SVGRepo_iconCarrier"> <g> <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"> </path> </g> </g>
+                        
+                        </svg>
+
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+    </section>
+    <!-- End of Contact Section -->
+
+    <!-- Page Footer -->
+    <footer class="footer">
         <div class="container">
           <div class="footer-row">
             <div class="social-links-row footer-social">
@@ -406,7 +488,6 @@
                 <img
                   src="img/social_icons/github.svg"
                   alt="https://github.com/KareemHussen"
-                  style="width: 100px; height: 100px;"
                 />
               </a>
   
@@ -414,7 +495,6 @@
                 <img
                   src="img/social_icons/linkedin.svg"
                   alt="https://www.linkedin.com/in/kareem-hussen"
-                  style="width: 100px; height: 100px;"
                 />
               </a>
   
@@ -422,104 +502,67 @@
                 <img
                   src="img/social_icons/facebook.svg"
                   alt="http://facebook.com/kareemgewaly"
-                  style="width: 100px; height: 100px;"
               /></a>
   
               <a href="https://www.instagram.com/kareemhussen500/">
                 <img
                   src="img/social_icons/instagram.svg"
                   alt="https://www.instagram.com/kareemhussen500/"
-                  style="width: 100px; height: 100px;"
               /></a>
   
               <a href="https://discord.com/users/385370239338151938">
                 <img
                   src="img/social_icons/discord.svg"
                   alt="https://discord.com/users/385370239338151938"
-                  style="width: 100px; height: 100px;"
               /></a>
+            </div>
+  
+            <div class="footer-copyright">
+              <p>&copy; Copyright Kareem Hussen</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </footer>
+    <!-- End of page footer -->
+	
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-row">
-          <div class="social-links-row footer-social">
-            <a href="https://github.com/KareemHussen">
-              <img
-                src="img/social_icons/github.svg"
-                alt="https://github.com/KareemHussen"
-              />
-            </a>
-
-            <a href="https://www.linkedin.com/in/kareem-hussen">
-              <img
-                src="img/social_icons/linkedin.svg"
-                alt="https://www.linkedin.com/in/kareem-hussen"
-              />
-            </a>
-
-            <a href="http://facebook.com/kareemgewaly">
-              <img
-                src="img/social_icons/facebook.svg"
-                alt="http://facebook.com/kareemgewaly"
-            /></a>
-
-            <a href="https://www.instagram.com/kareemhussen500/">
-              <img
-                src="img/social_icons/instagram.svg"
-                alt="https://www.instagram.com/kareemhussen500/"
-            /></a>
-
-            <a href="https://discord.com/users/385370239338151938">
-              <img
-                src="img/social_icons/discord.svg"
-                alt="https://discord.com/users/385370239338151938"
-            /></a>
-          </div>
-
-          <div class="footer-copyright">
-            <p>&copy; Copyright Kareem Hussen</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <div id="goToTop" class="goToTop">
-      <a href="#home">
-        <img src="img/icons/arrow_up.svg" alt="Back to top"
-      /></a>
-    </div>
+    <!-- steller js -->
+    <script src="assets/js/steller.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/skillbar.js"></script>
 
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+        src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
     ></script>
-    <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/main.js"></script>
 
-    <script>
-      document.querySelectorAll('.project-link').forEach(link => {
-        link.addEventListener('click', (e) => {
-          e.preventDefault();
-          const projectBox = link.closest('.project-box');
-          const video = projectBox.querySelector('.project-video');
-          
-          // Hide the link content
-          link.style.display = 'none';
-          
-          // Show the iframe
-          video.style.display = 'block';
-          
-          // Optional: Auto-play the video when shown
-          const src = video.src;
-          video.src = src.includes('?') ? `${src}&autoplay=1` : `${src}?autoplay=1`;
-        });
+  <script>
+    document.querySelectorAll('.project-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const projectBox = link.closest('.project-box');
+        const video = projectBox.querySelector('.project-video');
+        
+        // Hide the link content
+        link.style.display = 'none';
+        
+        // Show the iframe
+        video.style.display = 'block';
+        
+        // Optional: Auto-play the video when shown
+        const src = video.src;
+        video.src = src.includes('?') ? `${src}&autoplay=1` : `${src}?autoplay=1`;
       });
-      </script>
-  </body>
+    });
+    </script>
+    
+</body>
 </html>
