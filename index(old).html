@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kareem Hussen</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 1.5rem; /* Space between items */
+        width: 100%;
+      }
+      
+      .project-box {
+        position: relative;
+        overflow: hidden;
+        border-radius: 8px; /* Optional: for rounded corners */
+        aspect-ratio: 16/9; /* Maintain video aspect ratio (16:9) */
+      }
+      
+      .project-box iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        object-fit: cover; /* Ensure video covers the container */
+      }
+      
+      /* Responsive adjustments */
+      @media (max-width: 992px) {
+        .projects-grid {
+          grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .projects-grid {
+          grid-template-columns: 1fr; /* 1 column on mobile */
+        }
+      }
+      </style>
+
+      <style>
+        .project-box {
+          position: relative;
+          overflow: hidden;
+        }
+        
+        .project-link, .project-video {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+        
+        .project-video {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border: none;
+        }
+        </style>
+
+  </head>
+
+  <body>
+    <header id="header" class="header">
+      <div class="container container-lg">
+        <div class="header-nav">
+          <a
+            href="#home"
+            class="logo"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            >Kareem Hussen</a
+          >
+          <nav id="nav" class="nav">
+            <ul class="nav-list" data-aos="fade-down" data-aos-duration="1000">
+              <li class="nav-item">
+                <a href="#home" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#projects" class="nav-link">Works</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <button id="nav-btn" class="nav-btn">
+              <img
+                id="nav-btn-img"
+                src="img/icons/open.svg"
+                alt="Navigation button"
+              />
+            </button>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="container container-lg">
+        <div
+          class="hero-row"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-out"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+        >
+          <div class="hero-content">
+            <span class="hero-greeting"> Hello, I am</span>
+            <h1 class="hero-heading">Kareem Hussen</h1>
+            <span class="hero-heading-subtitle"
+              >Roblox Scripter & Backend Developer</span
+            >
+            <div class="about-social-list">
+              <div class="social-links-row">
+                <a href="https://github.com/KareemHussen">
+                  <img
+                    src="img/social_icons/github.svg"
+                    alt="https://github.com/KareemHussen"
+                  />
+                </a>
+
+                <a href="https://www.linkedin.com/in/kareem-hussen">
+                  <img
+                    src="img/social_icons/linkedin.svg"
+                    alt="https://www.linkedin.com/in/kareem-hussen"
+                  />
+                </a>
+
+                <a href="http://facebook.com/kareemgewaly">
+                  <img
+                    src="img/social_icons/facebook.svg"
+                    alt="http://facebook.com/kareemgewaly"
+                /></a>
+                <a href="https://www.instagram.com/kareemhussen500/">
+                  <img
+                    src="img/social_icons/instagram.svg"
+                    alt="https://www.instagram.com/kareemhussen500/"
+                /></a>
+                <a href="https://discord.com/users/385370239338151938">
+                  <img
+                    src="img/social_icons/discord.svg"
+                    alt="https://discord.com/users/385370239338151938"
+                /></a>
+              </div>
+            </div>
+
+            <div>
+              <a href="#projects" class="btn">My Portfolio</a>
+              <a href="#contact" class="btn btn-white">Contact Me</a>
+            </div>
+          </div>
+          <div class="hero-img">
+            <img
+              src="img/hero/hero.png"
+              alt="Picture of Christian Buehner taken from Unsplash</a>
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-title">
+          <h2 class="title">About Me</h2>
+        </div>
+        <div class="about-row">
+          <div
+            class="about-content"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <p class="about-descr">
+              I’m Kareem Hussen, a 22-year-old Roblox scripter with 1 year of experience in Lua scripting, creating engaging game mechanics and optimizing gameplay experiences. Alongside my passion for game development, I’m also a backend developer with 3 years of experience using Laravel, building robust and scalable web applications. I love combining creativity and technical skills to bring ideas to life, whether in games or web development!
+            </p>
+            
+          </div>
+          <div
+            class="about-skills"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <div class="skill">
+              <div class="skill-title">Roblox Scripting</div>
+              <div class="skill-percent">95%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="95"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">Laravel / PHP Development</div>
+              <div class="skill-percent">92%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="92"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">HTMl/CSS</div>
+              <div class="skill-percent">75%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="75"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-title">DevOps</div>
+              <div class="skill-percent">80%</div>
+              <div class="skill-bar__progress">
+                <div class="skill-bar__fill" data-progress="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="services-row">
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="50"
+          >
+            <img class="service-card-img" src="img/services/01.svg" alt="" />
+            <h3 class="service-card-title">Roblox Scripting</h3>
+            <p>
+              Crafting interactive and optimized game mechanics using Lua scripting to deliver engaging and seamless player experiences.
+            </p>
+          </div>
+
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <img class="service-card-img" src="img/services/02.svg" alt="" />
+            <h3 class="service-card-title">Backend Developer</h3>
+            <p>
+              Building scalable and efficient web applications using Laravel, focusing on robust backend solutions and seamless integrations to deliver high-performance systems.
+            </p>
+          </div>
+
+          <div
+            class="service-card"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <img class="service-card-img" src="img/services/03.svg" alt="" />
+            <h3 class="service-card-title">Education & Skills</h3>
+            <p>
+              Graduated in Computer Science from Ain Shams University, with a strong foundation in programming and a passion for game development and web technologies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="projects">
+      <div class="container container-lg">
+        <div class="projects-title">
+          <h2 class="title">Works</h2>
+        </div>
+
+        <div class="projects-grid">
+
+
+          <div class="project-box" 
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"
+              >
+            
+            <!-- Image and Mask (visible by default) -->
+            <a href="#!" class="project-link">
+              <img class="project-img" src="img/works/flying1.png" alt="" style="position: relative; top: -5rem;">
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Flying</h5>
+                  <p class="white">Effortless aerial movement with intuitive controls.</p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Iframe (hidden by default) -->
+            <iframe class="project-video" 
+                    src="https://www.youtube.com/embed/SIPOb6N2Txo"
+                    style="display: none;"></iframe>
+          </div>
+          
+
+
+          <div class="project-box" 
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"
+              >
+            
+            <!-- Image and Mask (visible by default) -->
+            <a href="#!" class="project-link">
+              <img class="project-img" src="img/works/fps.png" alt="" style="position: relative; top: -1rem;">
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Shooting System & FPS</h5>
+                  <p class="white">Immersive FPS combat with responsive shooting and weapon variety</p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Iframe (hidden by default) -->
+            <iframe class="project-video" 
+                    src="https://www.youtube.com/embed/qwly9Vlalpo"
+                    style="display: none;"></iframe>
+          </div>
+
+
+      <div class="project-box" 
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1000"
+          >
+        
+        <!-- Image and Mask (visible by default) -->
+        <a href="#!" class="project-link">
+          <img class="project-img" src="img/works/round.png" alt="" style="position: relative; top: -6rem;">
+          <div class="project-mask">
+            <div class="project-caption">
+              <h5 class="white">Round System</h5>
+              <p class="white">Seamless competitive matches with automated transitions and victory recognition.</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Iframe (hidden by default) -->
+        <iframe class="project-video" 
+                src="https://www.youtube.com/embed/1_1jezmzW2c"
+                style="display: none;"></iframe>
+      </div>
+
+
+      <div class="project-box" 
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-out"
+              data-aos-duration="1000"
+              >
+            
+            <!-- Image and Mask (visible by default) -->
+            <a href="#!" class="project-link">
+              <img class="project-img" src="img/works/customization.jpg" alt="" style="position: relative; top: -7rem;">
+              <div class="project-mask">
+                <div class="project-caption">
+                  <h5 class="white">Roblox Advanced Character Customization System</h5>
+                  <p class="white">Customize Roblox avatars: body, face, style, real-time multiplayer sync</p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Iframe (hidden by default) -->
+            <iframe class="project-video" 
+                    src="https://www.youtube.com/embed/E_NmHbEoRH4"
+                    style="display: none;"></iframe>
+        </div>
+          
+      </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-title">
+          <h2 class="title">Contact</h2>
+        </div>
+        <div class="contact-content">
+          <p>
+            Tell me about your project.
+            <br />
+            Let's talk and work together!
+          </p>
+        </div>
+
+       
+        <div class="response"></div>
+
+          <div class="container">
+            <div class="footer-row">
+              <div class="social-links-row footer-social">
+                <a href="https://github.com/KareemHussen">
+                  <img
+                    src="img/social_icons/github.svg"
+                    alt="https://github.com/KareemHussen"
+                    style="width: 100px; height: 100px;"
+                  />
+                </a>
+    
+                <a href="https://www.linkedin.com/in/kareem-hussen">
+                  <img
+                    src="img/social_icons/linkedin.svg"
+                    alt="https://www.linkedin.com/in/kareem-hussen"
+                    style="width: 100px; height: 100px;"
+                  />
+                </a>
+    
+                <a href="http://facebook.com/kareemgewaly">
+                  <img
+                    src="img/social_icons/facebook.svg"
+                    alt="http://facebook.com/kareemgewaly"
+                    style="width: 100px; height: 100px;"
+                /></a>
+    
+                <a href="https://www.instagram.com/kareemhussen500/">
+                  <img
+                    src="img/social_icons/instagram.svg"
+                    alt="https://www.instagram.com/kareemhussen500/"
+                    style="width: 100px; height: 100px;"
+                /></a>
+    
+                <a href="https://discord.com/users/385370239338151938">
+                  <img
+                    src="img/social_icons/discord.svg"
+                    alt="https://discord.com/users/385370239338151938"
+                    style="width: 100px; height: 100px;"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="social-links-row footer-social">
+            <a href="https://github.com/KareemHussen">
+              <img
+                src="img/social_icons/github.svg"
+                alt="https://github.com/KareemHussen"
+              />
+            </a>
+
+            <a href="https://www.linkedin.com/in/kareem-hussen">
+              <img
+                src="img/social_icons/linkedin.svg"
+                alt="https://www.linkedin.com/in/kareem-hussen"
+              />
+            </a>
+
+            <a href="http://facebook.com/kareemgewaly">
+              <img
+                src="img/social_icons/facebook.svg"
+                alt="http://facebook.com/kareemgewaly"
+            /></a>
+
+            <a href="https://www.instagram.com/kareemhussen500/">
+              <img
+                src="img/social_icons/instagram.svg"
+                alt="https://www.instagram.com/kareemhussen500/"
+            /></a>
+
+            <a href="https://discord.com/users/385370239338151938">
+              <img
+                src="img/social_icons/discord.svg"
+                alt="https://discord.com/users/385370239338151938"
+            /></a>
+          </div>
+
+          <div class="footer-copyright">
+            <p>&copy; Copyright Kareem Hussen</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="goToTop" class="goToTop">
+      <a href="#home">
+        <img src="img/icons/arrow_up.svg" alt="Back to top"
+      /></a>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="js/main.js"></script>
+
+    <script>
+      document.querySelectorAll('.project-link').forEach(link => {
+        link.addEventListener('click', (e) => {
+          e.preventDefault();
+          const projectBox = link.closest('.project-box');
+          const video = projectBox.querySelector('.project-video');
+          
+          // Hide the link content
+          link.style.display = 'none';
+          
+          // Show the iframe
+          video.style.display = 'block';
+          
+          // Optional: Auto-play the video when shown
+          const src = video.src;
+          video.src = src.includes('?') ? `${src}&autoplay=1` : `${src}?autoplay=1`;
+        });
+      });
+      </script>
+  </body>
+</html>
